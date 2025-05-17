@@ -26,7 +26,7 @@ const LinktreeForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('/api/users', {
+      await axios.post('https://linktreebackend-n1uq.onrender.com/api/users', {
         username,
         profileImage,
         displayName,

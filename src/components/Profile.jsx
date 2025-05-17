@@ -16,7 +16,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/${username}`);
+        const response = await axios.get(`https://linktreebackend-n1uq.onrender.com/api/${username}`);
         setProfile(response.data);
         setError(false);
       } catch (err) {
