@@ -1,0 +1,171 @@
+.header{
+  display: flex;
+  justify-content: center;
+  
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-family: var(--mainFont);
+  background-color: white;
+  margin: 1% 0;
+  border-radius: 50px;
+  position: fixed;
+  width: 100%;
+  max-width: 1250px;
+
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-claim-btn,
+.navbar-login,
+.navbar-signup {
+  font-family: var(--mainFont);
+}
+
+.navbar-login,
+.navbar-signup {
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.navbar-login {
+  background: none;
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+.navbar-signup {
+  background-color: black;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-signup:hover {
+  background-color: #1da851;
+}
+
+.navLinks {
+  display: flex;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.navLinks li {
+  list-style: none;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navLinks li a:hover {
+  text-decoration: underline;
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-auth,
+  .navbar-claim-btn {
+    display: none; /* hide auth buttons on mobile if needed */
+  }
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+  .navbar{
+    margin-top: 10px !important;
+
+  }
+  .navLinks {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: white;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-right {
+    gap: 10px;
+  }
+}

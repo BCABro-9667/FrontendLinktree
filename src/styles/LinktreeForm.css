@@ -1,0 +1,159 @@
+.hero1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.hero-title1 {
+  font-size: 54px;
+  line-height: 56px;
+  font-weight: bolder;
+  margin: 20px 0;
+  color: #D2E823;
+}
+
+.hero-subtitle1 {
+  margin: 20px 0;
+  color: #D2E823;
+}
+
+.hero-content1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.image-section1 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.linkgroup h3 {
+  color: #d1e82357;
+}
+
+.link-from-input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  margin: 10px 0;
+  font-family: var(--mainFont);
+}
+
+.link-from-input:focus{
+  border: 2px solid #D2E823 !important  ;
+}
+.link-from-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  margin: 10px 0;
+  cursor: pointer;
+  font-family: var(--mainFont);
+}
+
+/* RESPONSIVE PART */
+@media (max-width: 768px) {
+  .hero1 {
+      flex-direction: column; /* Stack vertically */
+      padding: 20px;
+      padding-top: 12%;
+  }
+
+  .hero-content1, .image-section1 {
+      width: 100%; /* Full width */
+      overflow: hidden;
+  }
+
+  .hero-title1 {
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+  }
+
+  .linkgroup h3 {
+      text-align: center;
+  }
+
+  .image-section1 {
+      margin-top: 20px;
+  }
+}
+
+
+.linkgroup3{
+  display: flex;
+  gap: 10px;
+}
+
+
+/* Modern File Upload Styles */
+.file-upload-container {
+  margin: 16px 0;
+}
+
+.file-upload-label {
+  display: block;
+  cursor: pointer;
+}
+
+.file-upload-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.file-upload-design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  transition: all 0.2s ease;
+}
+
+.file-upload-label:hover .file-upload-design,
+.file-upload-input:focus + .file-upload-design {
+  border-color: #646cff;
+  background-color: #f0f2ff;
+}
+
+.file-upload-icon {
+  width: 48px;
+  height: 48px;
+  color: #646cff;
+  margin-bottom: 12px;
+}
+
+.file-upload-text {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.file-upload-subtext {
+  font-size: 0.875rem;
+  color: #666;
+}

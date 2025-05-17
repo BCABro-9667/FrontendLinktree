@@ -1,0 +1,118 @@
+:root {
+  --theme-bg: linear-gradient(135deg, #254F1A, #3C6B22); /* ← gradient */
+  --accent-color: white;
+  --secondary-accent: #B7D528;
+  --card-bg: #254F1A;
+  --link-bg: #488f22;
+  --link-hover-bg: #3C6B22;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: .8rem;
+/* background: linear-gradient(135deg, #254F1A, #3C6B22);  */
+background-color: none;
+background: transparent !important;
+  margin: 4% 0;
+}
+
+  
+  /* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--theme-bg);
+    padding: 1rem;
+  } */
+  
+  .card {
+    background-color: transparent;
+    /* padding: 2rem; */
+    border-radius: 30px;
+    text-align: center;
+    width: 100%;
+    min-width: 60%;
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
+  }
+  
+  .profileImage {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border: 3px solid var(--accent-color);
+  }
+  
+  .name {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .subtitle {
+    color: var(--secondary-accent);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+       outline: none;
+  }
+  
+  .link {
+    background-color: var(--link-bg);
+    color: var(--accent-color);
+    text-decoration: none;
+    padding:  1.2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+    outline: none;
+  }
+  
+  .link:hover {
+    background-color: #254F1A;
+  }
+  
+  .container{
+    margin: 4% 0;
+  } 
+  /* ---------- Responsive Enhancements ---------- */
+  
+  @media screen and (min-width: 768px) {
+    .card {
+      padding: 2.5rem;
+      max-width: 400px;
+    }
+   
+   
+    .profileImage {
+      width: 150px !important;
+      height: 150px !important;
+    }
+  
+    .name {
+      font-size: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .link {
+      font-size: 1.05rem;
+      padding: 1rem;
+    }
+  }
+  
+
+
+  
+ 
